@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sign Up page</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    body{
+        background-image: url('Images/bg-intro-desktop.png');
+        background-color: hsl(0, 100%, 74%) ;
+    }
+
+    /* Use a media query to add a break point at 800px: */
+    @media screen and (max-width: 1200px) {
+    .input, #firstbutton, .rightside{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    margin-top: 0;
+    position: relative;
+    left: 80px;
+                        }
+    
+    }
+
+    @media screen and (max-width: 1200px) {
+    .btn{
+    width: 90%;
+        }
+    }
+
+
+</style>
+</head>
+<body>
+    <div class="body">
+        <div class="rightside">
+            <h1 style="font-size: 4vw;">Learn to Code by watching others</h1>
+
+            <p id="note" style="font-size: 1.5vw;">See how experienced developers solve problems in real-time. watching scripted tutorials is great, but 
+            understanding how developers think is invaluable.</p>
+        </div>
+
+        <div class="leftside">
+            <p id="firstbutton">Try it free 7 days then $20/mo. thereafter</p>
+
+            <form action="">
+
+            <div class="input">
+
+                <div class="fname">
+                    <input type="text" placeholder="First Name" id="fname" required>
+                    <label for="fname"></label>
+                </div>
+
+                <div class="lname">
+                    <input type="text" placeholder="Last Name" id="lname" required>
+                    <label for="lname"></label>
+                </div>
+
+                <div class="email">
+                    <input type="email" placeholder="Email Address" id="email" required>
+                    <label for="email"></label>
+                </div>
+
+                <div class="pwd">
+                    <input type="password" placeholder="Password" id="pwd" required>
+                    <label for="pwd"></label>
+                </div>
+
+                <div class="pwd2">
+                    <input type="password" placeholder="Confirm Password" id="pwd2" required>
+                    <label for="pwd2"></label>
+                </div>
+
+                <div class="btn">
+                    <button id="btn">CLAIM YOUR FREE TRAIL</button>
+                </div>
+                
+            </form>
+
+                <p id="terms" style="color: gray; font-size: 10px;">By clicking the button, you are agreeing to our <a href="https://www.hertechtrail.org" target="_blank" style="text-decoration: none;"><span style="color: red;">Terms and Services</span></a></p>
+
+                <div>
+                    <hr id="one"> <span style="position: relative; left: 145px;">OR</span> <hr id="two">
+                </div>
+                <ul style="list-style-type: none;">
+                    <li style="margin-top: 0;">
+                        <a href="https://www.facebook.com/hertechtrails" target="_blank"><img src="images/facebook.png" alt="Facebook Icon" width="25px" height="25px"></a>
+                        <a href="https://x.com/hertechtrail" target="_blank"><img src="images/twitter.png" alt="Twitter Icon" width="25px" height="25px"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram Icon" width="25px" height="25px"></a>
+                        <a href="https://www.linkedin.com/company/hertechtrail/" target="_blank"><img src="images/linkedin.png" alt="Linkedin Icon" width="25px" height="25px"></a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
